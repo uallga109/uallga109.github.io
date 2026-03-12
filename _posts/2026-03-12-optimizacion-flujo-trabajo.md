@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title: "🚀 Más allá del código: Arquitectura de Despliegue y Flujo Colaborativo en EscuderoGarcia"
