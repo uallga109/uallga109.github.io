@@ -1,0 +1,51 @@
+---
+layout: home
+title: Portafolio de uallga109
+---
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>uallga109 | Software Engineer</title>
+</head>
+<body>
+    <header>
+        <h1>¡Hola! Soy uallga109 👨‍💻</h1>
+        <p>Estudiante de Ingeniería del Software en la UAL.</p>
+    </header>
+
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Me apasiona el desarrollo de software y la automatización. Actualmente formo parte del equipo <strong>EscuderoGarcia</strong> en la asignatura de HMIS.</p>
+        <p>Mi objetivo es dominar herramientas como Docker, Azure y metodologías ágiles de desarrollo.</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <ul>
+            <li>
+                <strong>Blog Colaborativo EscuderoGarcia:</strong> 
+                Desarrollo de un sitio estático con Jekyll desplegado en Azure. 
+                <a href="URL_DEL_REPO_CONJUNTO">Ver repositorio de equipo</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="blog">
+        <h2>Mi Blog Técnico</h2>
+        <p>Aquí comparto artículos profundos sobre tecnología:</p>
+        <ul>
+            {% for post in site.posts %}
+              <li>
+                <a href="{{ post.url }}">🚀 {{ post.title }}</a> - <em>{{ post.date | date: "%d/%m/%Y" }}</em>
+              </li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <footer>
+        <p>Encuéntrame en <a href="https://github.com/uallga109">GitHub</a></p>
+    </footer>
+</body>
+</html>
