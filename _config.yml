@@ -1,1 +1,39 @@
-theme: jekyll-theme-minimal
+# --- Información del Sitio ---
+title: "uallga109 | Software Engineering Portfolio"
+email: uallga109@ual.es
+description: >- # Aparece en los buscadores (Google)
+  Blog técnico y portafolio profesional desarrollado para la asignatura 
+  Herramientas y Métodos en Ingeniería del Software (2026). 
+  Miembro del equipo EscuderoGarcia.
+
+# --- Ajustes de URL (Vital para evitar el 404) ---
+# Si tu repo es usuario.github.io, baseurl debe ser ""
+# Si tu repo es un nombre de proyecto, baseurl debe ser /nombre-repo
+baseurl: "" 
+url: "https://uallga109.github.io" 
+
+# --- Perfiles Sociales ---
+github_username:  uallga109
+# twitter_username: tu_usuario (puedes añadir más)
+
+# --- Configuración del Tema ---
+theme: minima
+# remote_theme: jekyll/minima # Descomenta si usas GitHub Pages directamente
+
+# --- Plugins de Alto Nivel ---
+# Estos plugins añaden metadatos SEO y feeds automáticos
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# --- Ajustes de Build ---
+markdown: kramdown
+highlighter: rouge # Para que el código se vea con colores profesionales
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
